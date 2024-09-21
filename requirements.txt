@@ -1,3 +1,4 @@
+streamlit-folium
 branca==0.7.2
 folium==0.17.0
 lxml==5.3.0
