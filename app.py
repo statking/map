@@ -34,7 +34,7 @@ coords = get_all_coordinates()
 # Check if there are any coordinates to plot
 if coords:
     # Create a Folium map centered at the first coordinate
-    m = folium.Map(location=coords[0], zoom_start=12)
+    m = folium.Map(location=coords[0], zoom_start=10)
 
     # Add the combined route to the map with a thicker line and blue color
     folium.PolyLine(coords, color='blue', weight=5, opacity=1).add_to(m)
