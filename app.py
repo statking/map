@@ -39,7 +39,7 @@ all_coords = get_all_coordinates()
 # Check if there are any coordinates to plot
 if all_coords:
     # Create a Folium map centered at the first coordinate of the first route
-    m = folium.Map(location=all_coords[0][0], zoom_start=15)
+    m = folium.Map(location=all_coords[0][0], zoom_start=10)
 
     # Add each set of coordinates as a separate polyline to avoid connecting first and last points
     for coords in all_coords:
