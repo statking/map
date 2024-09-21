@@ -46,8 +46,8 @@ if all_coords:
         folium.PolyLine(coords, color='blue', weight=5, opacity=1).add_to(m)
 
     # Streamlit app layout
-    st.title("Separate Route Visualization on Map")
-    st.write("This map displays the movement path from each GPX log file in the 'log' folder without connecting the first and last points of each file.")
+    st.title("Route Visualization on Map")
+    st.write("This map displays the movement path from each GPX log file since 2024.")
 
     # Display the map in Streamlit
     st_folium(m, width=700, height=500)
