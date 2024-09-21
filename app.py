@@ -4,7 +4,8 @@ import xml.etree.ElementTree as ET
 from streamlit_folium import st_folium
 import os
 
-# Function to read and parse all GPX files in the log folderdef get_all_coordinates(log_folder='log'):
+# Function to read and parse all GPX files in the log folder
+def get_all_coordinates(log_folder='log'):
     coords = []
     
     # Check if the folder exists
@@ -30,7 +31,8 @@ import os
 # Get coordinates from all files in the 'log' folder
 coords = get_all_coordinates()
 
-# Check if there are any coordinates to plotif coords:
+# Check if there are any coordinates to plot
+if coords:
     # Create a Folium map centered at the first coordinate
     m = folium.Map(location=coords[0], zoom_start=15)
 
